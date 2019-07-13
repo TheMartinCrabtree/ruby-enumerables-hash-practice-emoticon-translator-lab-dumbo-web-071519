@@ -4,7 +4,13 @@ require "yaml"
 def load_library(file_path)
   # code goes here
   emote_key = YAML.load_file(file_path)
-  dictionary = 
+  dictionary = {
+    "get_meaning" => {}, 
+    "get_emoticon" => {}
+    
+  }
+  
+  emote_key.each do 
   
 end
 
