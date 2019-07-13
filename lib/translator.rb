@@ -18,8 +18,17 @@ def load_library(file_path)
 end
 
 
-def get_japanese_emoticon()
+def get_japanese_emoticon(file_path, emoticon_english)
   # code goes here
+  dictionary = load_library(file_path)
+  
+  if(dictionary["get_emoticon"].include?(emoticon_english))
+    return dictionary["get_emoticon"][emoticon_english]
+  else
+    
+  end
+  
+  
 end
 
 def get_english_meaning
